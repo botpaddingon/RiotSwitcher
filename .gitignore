@@ -1,0 +1,9 @@
+# Données personnelles créées par le switcher : ne jamais publier
+profiles/
+meta/
+settings/
+_backup/
+config.json
+current.txt
+log.txt
+*.previous.ps1

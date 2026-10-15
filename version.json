@@ -1,0 +1,5 @@
+{
+    "version":  "2.2.0",
+    "sha256":  "499642c967df8437696ab813d5427402c4edbf3542cfe2916159d541a013ebcc",
+    "notes":  "Première version publiée : serveur, tri par colonne, perte de LP, champions récents, mises à jour automatiques."
+}

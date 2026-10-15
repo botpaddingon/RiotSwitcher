@@ -1,0 +1,59 @@
+RIOT SWITCHER
+=============
+
+Change de compte League of Legends en un double-clic, sans retaper ton mot de passe.
+
+- Aucun mot de passe n'est stocké : le script sauvegarde seulement la session
+  "Rester connecté" créée par Riot.
+- Le Riot Client n'est pas modifié et Vanguard n'est pas touché.
+- Affiche pour chaque compte : serveur, rang, évolution des LP, winrate, dernier lancement.
+- Comptes triés par rang (bannis en bas). Clique sur un en-tête de colonne pour trier
+  autrement, re-clique pour inverser.
+
+
+INSTALLATION
+------------
+1. Extrais le dossier où tu veux (ex : Documents\RiotSwitcher).
+   Ne le lance PAS depuis le zip, et ne le déplace plus après coup.
+2. Double-clic sur "Creer raccourci bureau.bat" (facultatif).
+3. Lance avec le raccourci "Riot Switcher" ou "Lancer RiotSwitcher.bat".
+
+Si Windows affiche "Windows a protégé votre ordinateur" : Informations complémentaires > Exécuter quand même.
+
+
+AJOUTER UN COMPTE
+-----------------
+1. Clique sur "Ajouter un compte" : le Riot Client s'ouvre déconnecté.
+2. Connecte-toi en cochant "Rester connecté".
+3. Lance League of Legends et attends l'accueil.
+4. Le switcher détecte la connexion et te demande un nom de profil.
+Recommence pour chaque compte.
+
+
+LES BOUTONS
+-----------
+  Lancer (ou double-clic)    ferme le client et le relance sur ce compte
+  Ré-enregistrer la session  si une session a expiré : connecte-toi sur le compte, puis clique
+  Actualiser le rang         relit le rang du compte lancé (après quelques parties)
+  BAN / dé-BAN               marque un compte comme banni
+  Raccourci bureau           crée "LoL - <compte>" sur le bureau : double-clic = lance ce compte direct
+  Supprimer                  supprime le profil (et son raccourci)
+
+Le rang est lu à chaque lancement. L'évolution compare au rang précédent
+(ex : "+45 LP en 3 parties", "▲ depuis Or I").
+"⚠ session à vérifier" = compte pas lancé depuis 3 semaines, la session a peut-être expiré.
+
+
+MÊMES RÉGLAGES SUR TOUS LES COMPTES
+-----------------------------------
+1. Lance ton compte principal.
+2. Clique sur "Copier mes réglages depuis le compte lancé" (touches, graphismes, son, interface).
+3. Coche "Appliquer ces réglages à chaque lancement".
+À chaque lancement, tes réglages sont copiés sur le compte (et sauvegardés chez Riot pour ce compte).
+
+
+SÉCURITÉ
+--------
+Le dossier "profiles" contient tes sessions : quelqu'un qui le récupère
+peut se connecter à tes comptes. Ne le partage JAMAIS.
+Pour partager l'outil, envoie seulement RiotSwitcher.ps1, les .bat et ce fichier.
