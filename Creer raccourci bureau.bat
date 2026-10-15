@@ -1,2 +1,2 @@
 @echo off
-start "" powershell -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File "%~dp0RiotSwitcher.ps1" -CreateShortcut
+start "" "%WINDIR%\System32\conhost.exe" --headless powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0RiotSwitcher.ps1" -CreateShortcut

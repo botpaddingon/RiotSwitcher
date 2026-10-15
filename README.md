@@ -4,7 +4,9 @@ Change de compte League of Legends en un double-clic, sans retaper ton mot de pa
 
 - **Aucun mot de passe stocké** : seule la session « Rester connecté » créée par Riot est sauvegardée, sur ton PC.
 - Ne modifie pas le Riot Client et ne touche pas à Vanguard.
-- Pour chaque compte : serveur, rang, évolution des LP, winrate, champions récents, alerte de perte de LP.
+- Pour chaque compte : serveur, rang, évolution des LP, winrate, champions récents, sanctions, alerte de perte de LP.
+- Sessions chiffrées avec ta session Windows, sauvegarde protégée par mot de passe.
+- Icône près de l'horloge, acceptation auto des parties, thème sombre, graphique des LP, export Discord.
 - Tri par colonne, raccourci bureau par compte, mêmes réglages sur tous les comptes.
 - Se met à jour tout seul depuis ce dépôt.
 

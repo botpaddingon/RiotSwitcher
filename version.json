@@ -1,5 +1,5 @@
 {
-    "version":  "2.2.0",
-    "sha256":  "499642c967df8437696ab813d5427402c4edbf3542cfe2916159d541a013ebcc",
-    "notes":  "Première version publiée : serveur, tri par colonne, perte de LP, champions récents, mises à jour automatiques."
+    "version":  "2.3.0",
+    "sha256":  "0ee076af2946ce00fd058bf824a310cbeaa4107534278494aefdcc1a85ae3800",
+    "notes":  "Plus de fenêtre de terminal, icône près de l\u0027horloge, acceptation auto, recherche et filtres, thème sombre, sanctions, op.gg, graphique des LP, actualiser tous les comptes, résumé de la semaine, export Discord, sessions chiffrées, sauvegarde par mot de passe."
 }

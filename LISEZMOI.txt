@@ -4,11 +4,12 @@ RIOT SWITCHER
 Change de compte League of Legends en un double-clic, sans retaper ton mot de passe.
 
 - Aucun mot de passe n'est stocké : le script sauvegarde seulement la session
-  "Rester connecté" créée par Riot.
+  "Rester connecté" créée par Riot, chiffrée avec ta session Windows
+  (inutilisable si quelqu'un copie le dossier sur un autre PC).
 - Le Riot Client n'est pas modifié et Vanguard n'est pas touché.
-- Affiche pour chaque compte : serveur, rang, évolution des LP, winrate, dernier lancement.
-- Comptes triés par rang (bannis en bas). Clique sur un en-tête de colonne pour trier
-  autrement, re-clique pour inverser.
+- Pour chaque compte : serveur, rang, évolution des LP, winrate, champions récents,
+  sanctions, alerte de perte de LP, dernier lancement.
+- Se met à jour tout seul (bouton bleu "Mettre à jour" quand une version sort).
 
 
 INSTALLATION
@@ -30,18 +31,19 @@ AJOUTER UN COMPTE
 Recommence pour chaque compte.
 
 
-LES BOUTONS
+UTILISATION
 -----------
-  Lancer (ou double-clic)    ferme le client et le relance sur ce compte
-  Ré-enregistrer la session  si une session a expiré : connecte-toi sur le compte, puis clique
-  Actualiser le rang         relit le rang du compte lancé (après quelques parties)
-  BAN / dé-BAN               marque un compte comme banni
-  Raccourci bureau           crée "LoL - <compte>" sur le bureau : double-clic = lance ce compte direct
-  Supprimer                  supprime le profil (et son raccourci)
+  Double-clic sur un compte       le lance (le client se ferme puis se relance dessus)
+  Clic droit sur un compte        op.gg, graphique des LP, raccourci bureau, BAN, supprimer...
+  Clic sur un en-tête de colonne  trie (re-clic = inverse)
+  Rechercher / serveur / bannis   filtres en haut de la fenêtre
+  Actualiser tous les comptes     lance chaque compte un par un pour tout mettre à jour
+  Plus ▾                          export pour Discord, sauvegarde, thème sombre...
 
-Le rang est lu à chaque lancement. L'évolution compare au rang précédent
-(ex : "+45 LP en 3 parties", "▲ depuis Or I").
-"⚠ session à vérifier" = compte pas lancé depuis 3 semaines, la session a peut-être expiré.
+Réduire la fenêtre l'envoie près de l'horloge : clic droit sur l'icône = lancer un compte.
+"Accepter les parties automatiquement" fonctionne tant que le switcher est ouvert.
+"⚠ session à vérifier" = compte pas lancé depuis 3 semaines, la session a peut-être expiré :
+connecte-toi dessus puis clic droit > "Ré-enregistrer la session".
 
 
 MÊMES RÉGLAGES SUR TOUS LES COMPTES
@@ -49,11 +51,16 @@ MÊMES RÉGLAGES SUR TOUS LES COMPTES
 1. Lance ton compte principal.
 2. Clique sur "Copier mes réglages depuis le compte lancé" (touches, graphismes, son, interface).
 3. Coche "Appliquer ces réglages à chaque lancement".
-À chaque lancement, tes réglages sont copiés sur le compte (et sauvegardés chez Riot pour ce compte).
+
+
+CHANGER DE PC
+-------------
+Les sessions chiffrées ne marchent que sur ce PC et cette session Windows.
+Pour changer de PC : Plus ▾ > "Sauvegarder mes comptes..." (protégé par un mot de passe que tu choisis),
+puis sur le nouveau PC : Plus ▾ > "Restaurer une sauvegarde...".
 
 
 SÉCURITÉ
 --------
-Le dossier "profiles" contient tes sessions : quelqu'un qui le récupère
-peut se connecter à tes comptes. Ne le partage JAMAIS.
+Ne partage jamais le dossier "profiles" ni un fichier .rsbackup avec son mot de passe.
 Pour partager l'outil, envoie seulement RiotSwitcher.ps1, les .bat et ce fichier.
